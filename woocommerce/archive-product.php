@@ -154,5 +154,32 @@ do_action('woocommerce_after_main_content');
  * @hooked woocommerce_get_sidebar - 10
  */
 do_action('woocommerce_sidebar');
+?>
 
+<div class="enquiry-footer">
+	<div class="mk-grid">
+		<div class="enquiry-footer-wrapper">
+			<div class="left-side">
+				<div class="enquiry-wrapper">
+					<h4>Enquire Today</h4>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="form-wrapper">
+					Contact Form
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="brands-footer">
+	<div class="mk-grid">
+		<h3>We Service and Repair All Major Brands</h3>
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/major-brands.jpg" alt="all major brands" />
+	</div>
+</div>
+</div>
+
+
+<?php
 get_footer('shop');

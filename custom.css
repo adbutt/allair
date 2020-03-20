@@ -2006,7 +2006,7 @@ header#mk-header-1 {
 #theme-page {
   top: 0;
   padding-top: 198px;
-  margin-bottom: 159px;
+  margin-bottom: 0;
 }
 .tax-pwb-brand #theme-page {
   padding-top: 0;
@@ -2028,4 +2028,39 @@ header#mk-header-1 {
   background-position: 50% 0;
   background-repeat: no-repeat;
   content: '';
+}
+
+.enquiry-footer {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+}
+.enquiry-footer-wrapper {
+  display: flex;
+}
+.enquiry-footer .left-side {
+  width: 50%;
+}
+.enquiry-footer .right-side {
+  width: 50%;
+}
+.enquiry-footer .enquiry-wrapper h4 {
+  color: #f97352;
+  font-weight: 600;
+}
+.enquiry-footer .form-wrapper {
+  display: block;
+  background-color: #fff;
+  background: #ffffff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.27);
+  padding: 20px;
+}
+
+.brands-footer {
+  padding: 60px 20px;
+  text-align: center;
+}
+.brands-footer h3 {
+  color: #57b37e;
+  padding: 10px 0;
+  font-weight: 600;
 }
