@@ -1898,6 +1898,11 @@ table.spec td {
 .pwb-single-product-brands a:nth-child(2) {
   display: none;
 }
+.pwb-brand-banner {
+  text-align: center;
+  padding: 10px 0;
+  /* margin-top: -80px; */
+}
 
 /** product loop **/
 
@@ -1970,6 +1975,7 @@ header#mk-header-1 {
 }
 
 .product-header-title h1 {
+  padding: 0 20px;
   color: #fff;
 }
 
@@ -1981,9 +1987,12 @@ header#mk-header-1 {
 .b-crumbs {
   color: #fff;
   font-weight: 600;
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 
+.rank-math-breadcrumb {
+  padding: 0 20px;
+}
 .rank-math-breadcrumb,
 .rank-math-breadcrumb a {
   color: #fff;
@@ -2001,4 +2010,22 @@ header#mk-header-1 {
 }
 .tax-pwb-brand #theme-page {
   padding-top: 0;
+}
+
+/** Brand Page Overides **/
+.page-id-1995 #theme-page .theme-page-wrapper {
+  margin-top: 0;
+}
+.page-id-1995 #theme-page .theme-page-wrapper .theme-content {
+  padding-top: 0;
+}
+
+.hero-holder {
+  min-height: 300px;
+  width: 100%;
+  display: block;
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  content: '';
 }

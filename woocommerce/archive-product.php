@@ -39,6 +39,17 @@ get_header('shop');
 </div>
 <?php
 do_action('woocommerce_before_main_content');
+//get the current taxonomy term
+$term = get_queried_object();
+
+$image = get_field('hero_image', $term);
+if ($image) { ?>
+	<div class="hero-holder" style="background-image: url('<?php echo $image; ?>');">
+
+	</div>
+
+<?php
+}
 
 /**
  * Hook: woocommerce_archive_description.
