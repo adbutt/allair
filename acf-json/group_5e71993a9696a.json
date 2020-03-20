@@ -1,0 +1,100 @@
+{
+    "key": "group_5e71993a9696a",
+    "title": "Star Ratings",
+    "fields": [
+        {
+            "key": "field_5e71997e6a7f1",
+            "label": "Heating",
+            "name": "heating",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "0 stars",
+                "0.5": "0.5 stars",
+                "1.0": "1 star",
+                "1.5": "1.5 stars",
+                "2.0": "2 stars",
+                "2.5": "2.5 stars",
+                "3.0": "3 stars",
+                "3.5": "3.5 stars",
+                "4.0": "4 stars",
+                "4.5": "4.5 stars",
+                "5.0": "5 stars",
+                "5.5": "5.5 stars",
+                "6.0": "6 stars",
+                "6.5": "6.5 stars",
+                "7.0": "7 stars"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e719b026a7f2",
+            "label": "Cooling",
+            "name": "cooling",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "0 stars",
+                "0.5": "0.5 stars",
+                "1.0": "1 star",
+                "1.5": "1.5 stars",
+                "2.0": "2 stars",
+                "2.5": "2.5 stars",
+                "3.0": "3 stars",
+                "3.5": "3.5 stars",
+                "4.0": "4 stars",
+                "4.5": "4.5 stars",
+                "5.0": "5 stars",
+                "5.5": "5.5 stars",
+                "6.0": "6 stars",
+                "6.5": "6.5 stars",
+                "7.0": "7 stars"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1584683698
+}
