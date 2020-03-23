@@ -1363,6 +1363,7 @@ a.mk-love-this {
 } */
 .mk-product-loop .products .product-loop-thumb {
   max-height: 290px;
+  overflow: hidden;
 }
 .mk-product-loop .products .product-loop-image {
   /* width: auto;
@@ -1931,6 +1932,7 @@ table.spec td {
   padding: 10px 15px;
   text-align: left;
   color: #444;
+  min-height: 60px;
 }
 .mk-product-loop.compact-layout .products .product-title a {
   color: #444;
