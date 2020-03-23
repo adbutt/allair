@@ -62,7 +62,7 @@ do_action('woocommerce_archive_description');
 ?>
 
 <div id="mk-archive-products">
-
+	<h2 class="archive-prod-title"><?php single_term_title(); ?> Products</h2>
 	<?php
 
 	if (woocommerce_product_loop()) {
@@ -156,29 +156,7 @@ do_action('woocommerce_after_main_content');
 do_action('woocommerce_sidebar');
 ?>
 
-<div class="enquiry-footer">
-	<div class="mk-grid">
-		<div class="enquiry-footer-wrapper">
-			<div class="left-side">
-				<div class="enquiry-wrapper">
-					<h4>Enquire Today</h4>
-				</div>
-			</div>
-			<div class="right-side">
-				<div class="form-wrapper">
-					Contact Form
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="brands-footer">
-	<div class="mk-grid">
-		<h3>We Service and Repair All Major Brands</h3>
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/major-brands.jpg" alt="all major brands" />
-	</div>
-</div>
-</div>
+<?php get_template_part('views/extended-footer'); ?>
 
 
 <?php

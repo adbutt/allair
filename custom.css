@@ -2019,7 +2019,9 @@ header#mk-header-1 {
 .page-id-1995 #theme-page .theme-page-wrapper .theme-content {
   padding-top: 0;
 }
-
+h2.archive-prod-title {
+  color: #439ea3;
+}
 .hero-holder {
   min-height: 300px;
   width: 100%;
@@ -2039,14 +2041,109 @@ header#mk-header-1 {
 }
 .enquiry-footer .left-side {
   width: 50%;
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
 }
 .enquiry-footer .right-side {
   width: 50%;
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
 }
 .enquiry-footer .enquiry-wrapper h4 {
   color: #f97352;
   font-weight: 600;
 }
+
+.enquiry-footer .enquiry-wrapper a.tel {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #42444b;
+  font-size: 16px;
+  font-weight: 600;
+}
+.enquiry-footer .enquiry-wrapper a.email {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  color: #42444b;
+  font-size: 16px;
+  font-weight: 600;
+}
+.enquiry-footer .enquiry-wrapper a::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+.enquiry-footer .enquiry-wrapper a.tel::before {
+  background-image: url('images/air-phone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+.enquiry-footer .enquiry-wrapper a.email::before {
+  background-image: url('images/air-email.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+.enquiry-footer .social-wrapper {
+  padding-top: 20px;
+}
+
+.enquiry-footer .social-wrapper p {
+  font-weight: 600;
+}
+.enquiry-footer .social-wrapper a {
+  padding-top: 10px;
+  position: relative;
+  text-indent: -9999px;
+  display: inline-block;
+  padding-right: 10px;
+  width: 20px;
+}
+
+.enquiry-footer .social-wrapper a.eq-facebook::before {
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url('images/air-facebook.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.enquiry-footer .social-wrapper a.eq-insta::before {
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url('images/air-insta.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.enquiry-footer .social-wrapper a.eq-youtube::before {
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url('images/air-youtube.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .enquiry-footer .form-wrapper {
   display: block;
   background-color: #fff;
@@ -2059,8 +2156,36 @@ header#mk-header-1 {
   padding: 60px 20px;
   text-align: center;
 }
-.brands-footer h3 {
+.brands-footer h4 {
   color: #57b37e;
   padding: 10px 0;
   font-weight: 600;
+}
+
+.woocommerce .products.related {
+  clear: both;
+  padding: 10px;
+}
+.woocommerce .products.related h2 {
+  font-weight: 600;
+  color: #439ea3;
+}
+/** XOO Cart Overides **/
+
+.xoo-wsc-header {
+  position: relative;
+  border-bottom: none;
+  padding: 15px;
+  background-color: #439ea3;
+  color: #fff;
+}
+.xoo-wsc-items-count {
+  background-color: #f97352;
+  color: #ffffff;
+}
+a.xoo-wsc-chkt {
+  background-color: #f97352;
+}
+a.xoo-wsc-chkt:hover {
+  background-color: #f85831;
 }

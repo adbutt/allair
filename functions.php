@@ -90,7 +90,7 @@ add_image_size('brand-thumbnail-size', 9999, 80);
  *  Remove Related Products
  */
 
-remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+// remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
 
 /**
  *  Add SKU below title
@@ -244,5 +244,12 @@ function custom_woocommerce_product_add_to_cart_text()
             break;
         default:
             return __('View Product', 'woocommerce');
+    }
+}
+add_action('mk_theme_before_footer_start', 'add_extended_footer', 10);
+function add_extended_footer()
+{
+    if (is_product() || is_page('1995')) {
+        get_template_part('views/extended-footer');
     }
 }
