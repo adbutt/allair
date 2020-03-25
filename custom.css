@@ -208,6 +208,7 @@ ul {
 /* Main Navigation */
 header#mk-header-1 {
   position: fixed;
+  min-height: 71px;
 }
 .main-nav-side-search {
   display: none;
@@ -392,6 +393,7 @@ header#mk-header-1 {
   .is-mobile-scrolled #mk-header-1 {
     position: fixed !important;
     height: 77px;
+    background: #fff;
   }
 
   .mk-header-inner > .mk-grid.header-grid > .add-header-height {
@@ -1366,11 +1368,9 @@ a.mk-love-this {
   overflow: hidden;
 }
 .mk-product-loop .products .product-loop-image {
-  /* width: auto;
+  width: auto;
   margin: auto;
-
-  height: 210px !important;
-  padding: 20px 0 70px; */
+  max-height: 290px;
 }
 .mk-product-loop.compact-layout .products .product-link {
   display: block;
@@ -1868,6 +1868,11 @@ table.spec td {
   width: 25%;
   float: left;
 }
+@media screen and (max-width: 700px) {
+  .pwb-all-brands .pwb-brands-cols-outer .pwb-brands-col3 {
+    width: 50%;
+  }
+}
 
 .pwb-brands-col3 div {
   display: flex;
@@ -1954,10 +1959,11 @@ table.spec td {
 .woocommerce-ordering {
   display: none;
 }
-
-header#mk-header-1 {
-  position: fixed;
-  height: 198px;
+@media screen and (min-width: 768px) {
+  header#mk-header-1 {
+    position: fixed;
+    height: 198px;
+  }
 }
 
 .product-header {
@@ -2041,6 +2047,11 @@ h2.archive-prod-title {
 .enquiry-footer-wrapper {
   display: flex;
 }
+@media screen and (max-width: 700px) {
+  .enquiry-footer-wrapper {
+    display: block;
+  }
+}
 .enquiry-footer .left-side {
   width: 50%;
   display: block;
@@ -2052,6 +2063,12 @@ h2.archive-prod-title {
   display: block;
   box-sizing: border-box;
   padding: 20px;
+}
+@media screen and (max-width: 700px) {
+  .enquiry-footer .left-side,
+  .enquiry-footer .right-side {
+    width: 100%;
+  }
 }
 .enquiry-footer .enquiry-wrapper h4 {
   color: #f97352;
@@ -2163,6 +2180,11 @@ h2.archive-prod-title {
   padding: 10px 0;
   font-weight: 600;
 }
+.brands-footer img {
+  height: auto;
+  width: 100%;
+  max-width: 520px;
+}
 
 .woocommerce .products.related {
   clear: both;
@@ -2190,4 +2212,10 @@ a.xoo-wsc-chkt {
 }
 a.xoo-wsc-chkt:hover {
   background-color: #f85831;
+}
+@media screen and (max-width: 700px) {
+  #theme-page .theme-page-wrapper .theme-content,
+  #theme-page .theme-page-wrapper .theme-content.no-padding {
+    padding-top: 70px !important;
+  }
 }
