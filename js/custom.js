@@ -37,6 +37,16 @@ jQuery(document).ready(function($) {
   // 	}
   // });
 
+  // $('.shop-by-tabs .tab-link').click(function() {
+  //   var tab_id = $(this).attr('data-tab');
+
+  //   $('.shop-by-tabs .tab-link').removeClass('current');
+  //   $('.tab-content').removeClass('current');
+
+  //   $(this).addClass('current');
+  //   $('#' + tab_id).addClass('current');
+  // });
+
   jQuery(function() {
     //caches a jQuery object containing the header element
     var body = jQuery('body');

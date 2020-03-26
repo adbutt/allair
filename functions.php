@@ -1,5 +1,9 @@
 <?php
 
+require_once(trailingslashit(get_stylesheet_directory()) . 'brands-shortcode.php');
+
+
+
 add_filter('gform_enable_field_label_visibility_settings', '__return_true');
 
 
