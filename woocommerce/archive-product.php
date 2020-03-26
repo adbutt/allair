@@ -61,15 +61,15 @@ if ($image) { ?>
 do_action('woocommerce_archive_description');
 
 ?>
-<div class="shop-by-tabs">
-	<div class="shop-by">
-		<h2>Shop By Product Series</h2>
-	</div>
-
-</div>
 <div class="archive-display">
 	<div id="brand-series" class="tab-content current">
 		<?php if (!$term->parent > 0) { ?>
+			<div class="shop-by-tabs">
+				<div class="shop-by">
+					<h2>Shop By Product Series</h2>
+				</div>
+
+			</div>
 			<div class="archive-brands">
 				<div class="archive-series">
 					<?php echo do_shortcode('[pwb-all-series per_page="10" image_size="medium" hide_empty="false" order_by="name" order="ASC" title_position="after"]'); ?>
