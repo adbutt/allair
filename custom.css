@@ -4,6 +4,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #4d5056;
+  /* font-size: 18px; */
 }
 
 .master-holder h1,
@@ -34,14 +35,14 @@ body {
 }
 
 .master-holder strong {
-  font-size: 15px;
+  font-size: 18px;
   color: #4d5056;
 }
 .master-holder strong.highlight {
   color: #f97352;
 }
 p {
-  font-size: 14px;
+  font-size: 18px;
   color: #4d5056;
   line-height: 1.5em;
 }
@@ -94,6 +95,7 @@ pre,
 table,
 ul {
   margin-bottom: 15px;
+  font-size: 18px;
 }
 .line_wrapper:before,
 .line_wrapper:after {
@@ -2015,6 +2017,11 @@ table.spec td {
   top: 0;
   padding-top: 198px;
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  #theme-page {
+    padding: 72px !important;
+  }
 }
 .tax-pwb-brand #theme-page {
   padding-top: 0;

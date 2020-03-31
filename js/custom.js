@@ -10,6 +10,11 @@ function remove_header_click() {
 }
 
 jQuery(document).ready(function($) {
+  $('.rank-math-breadcrumb span:contains("Brands")').html(
+    '<a href="/brands">' +
+      $('.rank-math-breadcrumb span:contains("Brands")').text() +
+      '<a>'
+  );
   // jQuery('.mk-product-holder .product-loop-thumb .product-item-footer a').on( "click", function() {
   // 	event.preventDefault();
 
